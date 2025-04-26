@@ -2,7 +2,7 @@
 
 # Verificar se o usuário é root
 
-if [ $(id -u $(whoami)) -gt 0 ]; then
+if [[ $(id -u $(whoami)) -gt 0 ]]; then
 	echo "Esse script requer permissões administrativas para que seja executado"
 	exit 0
 fi
